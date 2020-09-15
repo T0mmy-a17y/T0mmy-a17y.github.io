@@ -1,0 +1,64 @@
+
+        
+ <style>
+
+        .section__background{
+            z-index:    9;
+        }
+        .section__background.overlay{
+            background: url(https://assets.software.eu.playstation.com/museum/images/overlay.png);
+            z-index:  10;
+        }
+
+        .section-hero .container .contents-container {
+            display: table-cell;
+            vertical-align: middle;
+            height: calc(100vh - 100px);
+        }
+        .section-hero .container .contents-container .title {
+            margin-top: 40%;
+        }
+        .product-logo {
+            max-width:  350px;
+        }
+
+
+        .line__item:not(:last-child):after{
+            background-color: #0071cd;
+        }
+        .text {
+            color: #999999;
+        }
+        .title__sub,
+        .title__accent {
+            color:  #fff;
+        }
+
+        .section-hero .container .contents-container .title {
+            margin-top: 20%;
+        }
+
+        .media-carousel__controls .slick-arrow,
+        .media-carousel__controls-arrow,
+        .media-carousel__controls .slick-arrow:hover,
+        .media-carousel__controls-arrow:hover,
+        .media-carousel__controls .slick-arrow:focus,
+        .media-carousel__controls-arrow:focus,
+        .media-carousel__controls .slick-arrow.slick-disabled,
+        .media-carousel__controls-arrow.slick-disabled,
+        .media-carousel__controls .slick-arrow.slick-disabled:hover,
+        .media-carousel__controls-arrow.slick-disabled:hover {
+            background-color: #fff;
+            color: #0072ce;
+        }
+
+        
+        
+    </style>
+	
+	
+	
+	
+	
+
+	

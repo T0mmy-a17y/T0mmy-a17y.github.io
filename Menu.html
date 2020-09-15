@@ -1,0 +1,209 @@
+
+
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width, height=device-height"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta names="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>PlayStation Museum</title>
+    <link rel="stylesheet" href="https://assets.software.eu.playstation.com/museum/css/app.css?v=24">
+
+    <style>
+
+        .section__background{
+            z-index:    9;
+        }
+        .section__background.overlay{
+            background: url(https://assets.software.eu.playstation.com/museum/images/overlay.png);
+            z-index:  10;
+        }
+
+        .section-hero .container .contents-container {
+            display: table-cell;
+            vertical-align: middle;
+            height: calc(100vh - 100px);
+        }
+        .section-hero .container .contents-container .title {
+            margin-top: 40%;
+        }
+        .product-logo {
+            max-width:  350px;
+        }
+
+
+        .line__item:not(:last-child):after{
+            background-color: #0071cd;
+        }
+        .text {
+            color: #999999;
+        }
+        .title__sub,
+        .title__accent {
+            color:  #fff;
+        }
+
+        .section-hero .container .contents-container .title {
+            margin-top: 20%;
+        }
+
+        .media-carousel__controls .slick-arrow,
+        .media-carousel__controls-arrow,
+        .media-carousel__controls .slick-arrow:hover,
+        .media-carousel__controls-arrow:hover,
+        .media-carousel__controls .slick-arrow:focus,
+        .media-carousel__controls-arrow:focus,
+        .media-carousel__controls .slick-arrow.slick-disabled,
+        .media-carousel__controls-arrow.slick-disabled,
+        .media-carousel__controls .slick-arrow.slick-disabled:hover,
+        .media-carousel__controls-arrow.slick-disabled:hover {
+            background-color: #fff;
+            color: #0072ce;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .section--videos .row,
+            .section--videos .row .video,
+            .section--videos .row .video img{
+                width:  100%;
+                margin:  0;
+            }
+
+            .section--videos .row .video {
+                margin-bottom:  20px;
+            }
+
+            .product-logo {
+                max-width:  250px;
+            }
+            .hero {
+                min-height: 500px;
+                max-height:  500px;
+            }
+        }
+    </style>
+</head>
+<body class="body--desktop">
+
+
+<div id="app" class="page">
+    <section class="section-hero hero section section--background">
+        <div class="section__background overlay"></div>
+        <div class="section__background">
+            <video muted="" loop="" autoplay="" playsinline="" class="hero__video">
+                <source src="https://assets.software.eu.playstation.com/museum/assets/videos/hero.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+            </video>
+        </div>
+        <div class="container">
+            <div class="row" style="width: 100%;">
+                <div class="col-10 col-push-1 col-4@mobile col-push-0@mobile contents-container">
+                    <div class="title">
+                        <img style="max-width: 455px; width: 100%; margin-bottom: 30px;" src="https://assets.software.eu.playstation.com/museum/assets/images/ps_batch2.svg" alt="PlayStation" title="PlayStation">
+                        <p class="title__sub"></p>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section  hide@mobile" id="section-products">
+        <div class=" container ">
+
+            <div class="row products section-products-timeline">
+                <div class="col-2 text products__item">
+                    <img data-target="#app-main-section" src="https://assets.software.eu.playstation.com/museum/assets/images/devices/ps-1.png" alt="">
+                    <h5>PlayStation&reg;</h5>
+                </div>
+
+                <div class="col-2 text products__item">
+                    <img data-target="#section-ps2" src="https://assets.software.eu.playstation.com/museum/assets/images/devices/ps-2.png" alt="">
+                    <h5>PlayStation&reg;2</h5>
+                </div>
+
+               
+
+                <div class="col-2 text products__item">
+                    <img data-target="#section-ps3" src="https://assets.software.eu.playstation.com/museum/assets/images/devices/ps-3.png" alt="">
+                    <h5>PlayStation&reg;3</h5>
+                </div>
+
+                
+                <div class="col-2 text products__item">
+                    <img data-target="#section-ps4" src="https://assets.software.eu.playstation.com/museum/assets/images/devices/ps-4.png" alt="">
+                    <h5>PlayStation&reg;4</h5>
+                </div>
+            </div>
+
+            <div class="row line hide@mobile">
+                <div class="col-2 text line__item">
+                    <span class="line__time">1994</span>
+                </div>
+
+                <div class="col-2 text line__item">
+                    <span class="line__time">2000</span>
+                </div>
+
+                
+
+                <div class="col-2 text line__item">
+                    <span class="line__time">2006</span>
+                </div>
+
+                
+
+                <div class="col-2 text line__item">
+                    <span class="line__time">2013</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+
+
+
+
+<script type="application/javascript">
+    jQuery(document).ready(function(){
+        jQuery('.section-products-timeline img').each(function(){
+            var $this = jQuery(this);
+
+            $this.css({'cursor': 'pointer'});
+
+            $this.on('click', function(){
+                var id = jQuery(this).attr('data-target');
+
+                $('html, body').animate({
+                    scrollTop: jQuery(id).offset().top
+                });
+            });
+        });
+    });
+</script>
+
+
+
+
+       
+	 
+	 
+<button onclick="document.location = 'PLAYSTATION 1.html'">PlayStation 1</button> 
+<button onclick="document.location = 'PLAYSTATION 2.html'">PlayStation 2</button>
+<button onclick="document.location = 'PLAYSTATION 3.html'">PlayStation 3</button>
+<button onclick="document.location = 'PLAYSTATION 4.html'">PlayStation 4</button>
+
+	 
+	 
+	 
+	 
+
+
+</body>
+</html>
